@@ -1,5 +1,6 @@
 :root {
-    --width: 1200px;
+    --min-width: 750px;
+    --max-width: 1200px;
 }
 
 * {
@@ -35,7 +36,8 @@ nav li:hover > a {
 }
 
 header {
-    width: var(--width);
+    min-width: var(--min-width);
+    max-width: var(--max-width);
     padding: 15px 150px;
     margin: 0 auto;
     display: flex;
@@ -72,7 +74,8 @@ header {
 }
 
 #nav > ul {
-    width: var(--width);
+    min-width: var(--min-width);
+    max-width: var(--max-width);
     margin: 0 auto;
     justify-content: center;
 }
@@ -87,7 +90,8 @@ header {
 }
 
 main {
-    width: var(--width);
+    min-width: var(--min-width);
+    max-width: var(--max-width);
     margin: 25px auto;
 }
 
@@ -99,7 +103,8 @@ footer {
 }
 
 #footer {
-    width: var(--width);
+    min-width: var(--min-width);
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 
@@ -218,6 +223,7 @@ footer {
     padding: 10px;
     position: absolute;
     left: 30px;
+    right: 30px;
     bottom: 30px;
     border-radius: 10px;
     font-size: 24px;
