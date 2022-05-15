@@ -4,4 +4,4 @@
 
 Ссылка на сайт: https://merry-hamster-6bb39a.netlify.app
 
-Отчёт: ЭВТ.pdf
+Отчёт: [ЭВТ.pdf](https://github.com/AirForce9/EVT/files/8695695/default.pdf)
