@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="modal" class="modal">
+            <div class="form-wrapper">
+                <form>
+                    <span class="close-form" onclick="document.getElementById('modal').style.display = 'none';">✕</span>
+                    <input class="input" placeholder="Имя">
+                    <input class="input" placeholder="Номер телефона">
+                    <button id="send-button" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div id="ask-modal" class="modal">
+            <div class="form-wrapper">
+                <form>
+                    <span class="close-form" onclick="document.getElementById('ask-modal').style.display = 'none';">✕</span>
+                    <input class="input" placeholder="Имя">
+                    <input class="input" placeholder="Номер телефона">
+                    <input class="input" placeholder="Вопрос">
+                    <button id="ask-button" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <header>
+            <div id="logo" onclick="document.location.href = 'index.html';">
+                <svg width="64" height="64">
+                    <ellipse cx="32" cy="32" rx="32" ry="32" fill="#811"/>
+                </svg>
+                <span id="logo__name">Sakura</span>
+            </div>
+            <div id="greeting">
+                <span id="greeting__text">武道クラブへようこそ</span>
+                <img id="greeting__pray" src="images/pray.png"
+                     onclick="document.getElementById('modal').style.display = 'block';">
+            </div>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="">Главная</a>
+                </li>
+                <li>
+                    <a href="services.html">Услуги</a>
+                </li>
+                <li>
+                    <a href="price.html">Стоимость</a>
+                </li>
+                <li>
+                    <a href="promotions.html">Акции</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="frame">
+                <img src="images/main.png">
+                <span>«Никогда не знать поражения означает никогда не вступать в борьбу» — Морихей Уесиба</span>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <div id="footer__row">
+                    <nav id="footer__nav">
+                        <ul>
+                            <li>
+                                <a href="">Главная</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="price.html">Стоимость</a>
+                            </li>
+                            <li>
+                                <a href="promotions.html">Акции</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="ask-question" onclick="document.getElementById('ask-modal').style.display = 'block';">
+                        <span>Задать вопрос</span>
+                    </div>
+                </div>
+                <div id="rights">
+                    <span>&copy; Все права защищены. 2022</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

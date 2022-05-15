@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Контакты</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="modal" class="modal">
+            <div class="form-wrapper">
+                <form>
+                    <span class="close-form" onclick="document.getElementById('modal').style.display = 'none';">✕</span>
+                    <input class="input" placeholder="Имя">
+                    <input class="input" placeholder="Номер телефона">
+                    <button id="send-button" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div id="ask-modal" class="modal">
+            <div class="form-wrapper">
+                <form>
+                    <span class="close-form" onclick="document.getElementById('ask-modal').style.display = 'none';">✕</span>
+                    <input class="input" placeholder="Имя">
+                    <input class="input" placeholder="Номер телефона">
+                    <input class="input" placeholder="Вопрос">
+                    <button id="ask-button" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <header>
+            <div id="logo" onclick="document.location.href = 'index.html';">
+                <svg width="64" height="64">
+                    <ellipse cx="32" cy="32" rx="32" ry="32" fill="#811"/>
+                </svg>
+                <span id="logo__name">Sakura</span>
+            </div>
+            <div id="greeting">
+                <span id="greeting__text">武道クラブへようこそ</span>
+                <img id="greeting__pray" src="images/pray.png"
+                     onclick="document.getElementById('modal').style.display = 'block';">
+            </div>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="services.html">Услуги</a>
+                </li>
+                <li>
+                    <a href="price.html">Стоимость</a>
+                </li>
+                <li>
+                    <a href="promotions.html">Акции</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <main style="display: flex;">
+            <div id="left-column">
+                <div id="contacts">
+                    <div id="address">
+                        <span>Адрес:</span>
+                        <span>г. Минск, ул. Петруся Бровки, 6</span>
+                    </div>
+                    <div id="phone-number">
+                        <span>Номер телефона:</span>
+                        <span>+375 (44) 578-47-38</span>
+                    </div>
+                </div>
+            </div>
+            <div id="right-column" style="justify-content: flex-end;">
+                <div style="position: relative; display: flex; overflow: hidden;">
+                    <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
+                       style="position: absolute; top: 0; font-size: 12px; color: #EEE;">Минск</a>
+                    <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycw5kQEIHQFtpfXVwdntjbA==/?ll=27.594970%2C53.917708&utm_medium=mapframe&utm_source=maps&z=16"
+                       style="position:absolute; top: 14px; font-size: 12px; color: #EEE;">Улица Петруся Бровки, 6 на
+                        карте Минска, ближайшее метро Академия наук — Яндекс.Карты</a>
+                    <iframe src="https://yandex.by/map-widget/v1/-/CCUFj-VJ2C" width="560" height="400"
+                            style="position: relative;"></iframe>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <div id="footer__row">
+                    <nav id="footer__nav">
+                        <ul>
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="price.html">Стоимость</a>
+                            </li>
+                            <li>
+                                <a href="promotions.html">Акции</a>
+                            </li>
+                            <li>
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="ask-question" onclick="document.getElementById('ask-modal').style.display = 'block';">
+                        <span>Задать вопрос</span>
+                    </div>
+                </div>
+                <div id="rights">
+                    <span>&copy; Все права защищены. 2022</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
