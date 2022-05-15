@@ -307,17 +307,12 @@ footer {
 
 #left-column {
     width: 50%;
-    padding-right: 100px;
     box-sizing: border-box;
 }
 
 .table {
     margin-bottom: 20px;
 }
-
-/*.table:last-child {
-    margin-bottom: 0;
-}*/
 
 .table__service {
     margin-bottom: 15px;
